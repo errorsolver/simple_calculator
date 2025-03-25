@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:simple_calculator/kalkulator.dart';
 
@@ -13,16 +11,9 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Main Menu',
-          // style: TextStyle(fontSize: 30, color: Colors.white),
-        ),
-        // backgroundColor: Colors.blue,
-      ),
+      appBar: AppBar(title: Text('Main Menu')),
       body: Center(
         child: Container(
-          // color: Colors.white,
           width: 512,
           alignment: Alignment.center,
           margin: EdgeInsets.all(10),
@@ -33,20 +24,14 @@ class MenuPage extends StatelessWidget {
           ),
           child: Column(
             children: [
-              // Align(alignment: Alignment.center),
-              // Padding(padding: EdgeInsets.all(10)),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.deepOrangeAccent,
                 ),
-                // width: 350,
                 alignment: Alignment.center,
-                // margin: EdgeInsets.only(bottom: 10, left: 10, right: 10),
-                // margin: EdgeInsets.only(bottom: 10),
                 child: Text(
                   'Pilih Halaman:',
-                  // textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 30, color: Colors.white),
                 ),
               ),
@@ -55,10 +40,7 @@ class MenuPage extends StatelessWidget {
                   Expanded(
                     child: SizedBox(
                       height: 10,
-                      child: Divider(
-                        color: Colors.white, // Warna garis
-                        thickness: 1,
-                      ),
+                      child: Divider(color: Colors.white, thickness: 1),
                     ),
                   ),
                 ],
@@ -68,11 +50,7 @@ class MenuPage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ElevatedButton(
-                      style: ButtonStyle(
-                        // backgroundColor: WidgetStateProperty.all(
-                        //   Colors.amberAccent,
-                        // ),
-                      ),
+                      style: ButtonStyle(),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -90,7 +68,6 @@ class MenuPage extends StatelessWidget {
           ),
         ),
       ),
-      // ),
     );
   }
 }

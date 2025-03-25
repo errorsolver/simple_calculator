@@ -17,9 +17,7 @@ class KalkulatorState extends State<Kalkulator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // debugShowCheckedModeBanner: false,
       appBar: AppBar(title: Text('Kalkulator Sederhana')),
-
       body: Center(
         child: Container(
           width: 512,
@@ -78,10 +76,7 @@ class KalkulatorState extends State<Kalkulator> {
                   Expanded(
                     child: SizedBox(
                       height: 10,
-                      child: Divider(
-                        color: Colors.white, // Warna garis
-                        thickness: 1,
-                      ),
+                      child: Divider(color: Colors.white, thickness: 1),
                     ),
                   ),
                 ],
@@ -90,11 +85,7 @@ class KalkulatorState extends State<Kalkulator> {
                 children: [
                   Expanded(
                     child: ElevatedButton(
-                      style: ButtonStyle(
-                        // backgroundColor: WidgetStateProperty.all(
-                        //   Colors.amberAccent,
-                        // ),
-                      ),
+                      style: ButtonStyle(),
                       onPressed: () {
                         Navigator.push(
                           context,
