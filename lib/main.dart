@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Kalkulator Sederhana',
+      title: 'A18.2023.00026',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.orange[400],

@@ -17,7 +17,6 @@ class KalkulatorState extends State<Kalkulator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Kalkulator Sederhana')),
       body: Center(
         child: Container(
           width: 512,
