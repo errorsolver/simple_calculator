@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:simple_calculator/Kalkulator.dart';
+import 'menu_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: Kalkulator(),
+      home: MenuPage(),
     );
   }
 }
